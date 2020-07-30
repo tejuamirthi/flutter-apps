@@ -40,54 +40,46 @@ class BusinessCard extends StatelessWidget {
                   fontFamily: 'SourceSansPro'
                 ),
               ),
-              Container(
-                color: Colors.white,
-                padding: EdgeInsets.all(10.0),
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                alignment: Alignment.center,
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.phone,
-                      color: Colors.teal,
-                      size: 25.0,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      '+91 7382004269',
-                      style: TextStyle(
-                        color: Colors.teal[900],
-                        fontSize: 20.0
-                      ),
-                    )
-                  ],
+              SizedBox(
+                height: 20.0,
+                width: 130.0,
+                child: Divider(
+                  color: Colors.teal[100],
+                  thickness: 2,
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
-                padding: EdgeInsets.all(10.0),
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                alignment: Alignment.center,
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.email,
-                      color: Colors.teal,
-                      size: 25.0,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+91 7382004269',
+                    style: TextStyle(
+                        color: Colors.teal[900],
+                        fontSize: 20.0
                     ),
-                    SizedBox(
-                      width: 10.0,
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'tejuamirthi@gmail.com',
+                    style: TextStyle(
+                        color: Colors.teal[900],
+                        fontSize: 20.0
                     ),
-                    Text(
-                      'tejuamirthi@gmail.com',
-                      style: TextStyle(
-                          color: Colors.teal[900],
-                          fontSize: 20.0
-                      ),
-                    )
-                  ],
+                  ),
                 ),
               ),
             ],
